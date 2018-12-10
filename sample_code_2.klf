@@ -1,0 +1,13 @@
+main{
+	foo(10);
+	bar(true);
+	return 0;
+}
+
+func int foo(int a){
+	return a;
+}
+
+func bool bar(bool a){
+	return a;
+}

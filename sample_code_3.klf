@@ -1,0 +1,28 @@
+main { 
+	newVar bool boolVar;
+	newVar int a;
+	newVar int b;
+
+	a = 10;
+	b = 0;
+
+	System.output( a );
+	repeat {
+		if  ((b < a)) {
+			b = (b + 1);
+		};
+		if ((b > a)) {
+			boolVar = true;
+		};
+		System.output(higher(a, b));
+	} until ( boolVar );
+
+	return 0;
+}
+
+func bool higher (int a, int b) { 
+	if((a > b)){
+		return a;
+	};
+	return b;
+}
